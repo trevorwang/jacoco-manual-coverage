@@ -1,4 +1,4 @@
-package com.oriente.jacocomanual
+package com.example.jacocomanual
 
 import org.junit.Test
 
