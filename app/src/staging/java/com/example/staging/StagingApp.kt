@@ -78,7 +78,7 @@ class StagingApp : Application() {
 
             Log.d(TAG, agent.toString())
             it.write(
-                agent.javaClass.getMethod("getExecutionData", Boolean::class.javaPrimitiveType!!)
+                agent.javaClass.getMethod("getExecutionData", Boolean::class.javaPrimitiveType)
                     .invoke(agent, false) as ByteArray
             )
         }

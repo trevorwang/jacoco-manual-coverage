@@ -45,7 +45,10 @@ project.afterEvaluate {
                     "$project.projectDir/src/${variantName}/kotlin"
             ])
             // 最开始我们生成的文件
-            executionData = files("${project.buildDir}/jacoco/${testTaskName}.exec")
+            executionData = files([
+                    "${project.buildDir}/jacoco/${testTaskName}.exec",
+                    "${rootDir}/jacoco/jacoco-coverage.ec"
+            ])
         }
     }
 }
